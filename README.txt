@@ -1,6 +1,6 @@
 = Genem
 
-* http://github.com/alexbaroni/genem/wikis
+* http://wiki.github.com/alexbaroni/genem
 * mailto:alexbaroni68@gmail.com
 
 == DESCRIPTION:
