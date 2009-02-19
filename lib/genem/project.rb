@@ -27,6 +27,11 @@ module Genem
       end
     end
     
+    # Create _project_name_ project containing a _class_name_.
+    #
+    # :call-seq:
+    # Project.create(STDOUT, project_name, class_name) -> nil
+    #
     def Project.create(messenger, project_name, class_name)
       project_file_content_generator = ProjectFileContentGenerator.new(project_name, class_name)
       project = Project.new(messenger, project_file_content_generator)
