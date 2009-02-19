@@ -13,7 +13,7 @@ It creates the project tree and the project files.
 
 == SYNOPSIS:
 
-  genem project_name
+  genem ProjectName ClassName
   
   it creates:
     project_name
@@ -31,13 +31,13 @@ It creates the project tree and the project files.
       |
       lib
       | project_name
-      | | first_class.rb
+      | | class_name.rb
       | |
       | project_name.rb
       |
       spec
       | project_name
-      | | first_class_spec.rb
+      | | class_name_spec.rb
       | |
       | spec.opts
       | spec_helper.rb
