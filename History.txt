@@ -1,0 +1,3 @@
+=== Version 0.1.0 / 2009-02-16
+
+This is the first preview release of Genem, a simple tool to generating ruby project (without Rails)

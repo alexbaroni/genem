@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby -w
+$LOAD_PATH.push File.join(File.dirname(__FILE__), "/../lib")
+require 'genem'
+
+if ARGV.size == 2
+  Genem::Project.create(STDOUT, ARGV[0], ARGV[1])
+else
+  puts "Wrong number of arguments (usage genem ProjectName ClassName)"
+end
