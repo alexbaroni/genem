@@ -3,7 +3,7 @@ require 'rake'
 
 Gem::Specification.new do |s|
   s.name = %q{genem}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
   s.authors = ["Alessandro Baroni"]
   s.date = %q{2009-02-16}
   s.description = %q{Project creator for Ruby.}

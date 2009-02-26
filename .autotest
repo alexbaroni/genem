@@ -16,7 +16,7 @@
 # require 'autotest/shame'
 # require 'autotest/snarl'
 require 'autotest/timestamp'
-require 'win32console'
+require 'win32console' if RUBY_PLATFORM =~ /win32/
 
 # Autotest::AutoUpdate.sleep_time = 60
 # Autotest::AutoUpdate.update_cmd = 'svn up'

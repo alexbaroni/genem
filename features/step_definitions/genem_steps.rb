@@ -1,10 +1,11 @@
 After do
-  project_root = File.join(".", @project_name)
+  project_root = File.join(".", @project_dir)
   FileUtils.rm_r project_root if File.exists? project_root
 end
 
 Given /^a project named "(.*)"$/ do |name|
   @project_name = name
+  @project_dir = name.scan(/[A-Z][a-z0-9]+/).join('_').downcase
 end
 
 Given /^a class named "(.*)"$/ do |name|
@@ -26,17 +27,17 @@ Then /^a directory named "(.*)" should exist$/ do |name|
 end
 
 Then /^a subdirectory named "(.*)" should exist$/ do |subdir|
-  project_subdirectory = File.join(".", @project_name, subdir)
+  project_subdirectory = File.join(".", @project_dir, subdir)
   File.exists?(project_subdirectory).should be_true
 end
 
 Then /^a file named "(.*)" should exist under the project root directory$/ do |file|
-  project_file = File.join(".", @project_name, file)
+  project_file = File.join(".", @project_dir, file)
   File.exists?(project_file).should be_true
 end
 
 Then /^a file named "(.*)" should exist under the "(.*)" subdirectory$/ do |file, subdir|
-  project_file = File.join(".", @project_name, subdir, file)
+  project_file = File.join(".", @project_dir, subdir, file)
   File.exists?(project_file).should be_true
 end
 

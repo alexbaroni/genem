@@ -3,6 +3,11 @@ require 'fileutils'
 
 module Genem
   describe Project, "when successfully create a project named Supernova" do
+    before(:each) do
+      project_root = File.join(".", "supernova")
+      FileUtils.rm_r project_root if File.exists? project_root
+    end
+ 
     after(:each) do
       project_root = File.join(".", "supernova")
       FileUtils.rm_r project_root if File.exists? project_root

@@ -7,6 +7,7 @@
 
 Genem is a tool for creating a ruby project that use RSpec and Cucumber for BDD.
 It creates the project tree and the project files.
+
 == FEATURES:
 
 * Genem::Project provides the ruby project tree and files creator
